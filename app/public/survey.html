@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend-Finder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" placeholder="e.g. - John Smith" required>
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" placeholder="please provide image url" required>
+        <hr>
+        
+        
+        <div class="form-group">
+            <h3><strong>Question 1</strong></h3>
+            <label for="question1"><h4>If our limo breaks down would you rather . . .</h4></label>
+            <select class="form-control" id="question1">
+                <option value></option>
+                <option value="1">1 - Wait for the replacement limo. You don't do buses!</option>
+                <option value="2">2 - Go home.  The night is ruined</option>
+                <option value="3">3 - Call a friend</option>
+                <option value="4">4 - Call an uber</option>
+                <option value="5">5 - Let's take a bus</option>
+            </select>
+            <h3><strong>Question 2</strong></h3>
+            <label for="question2"><h4>If there is dirt on your friends face you would rather . . .</h4></label>
+            <select class="form-control" id="question2">
+                <option value></option>
+                <option value="1">1 - Act like nothing is wrong. They'll notice eventually.</option>
+                <option value="2">2 - Feel very uncomfortable.  Why don't they notice!</option>
+                <option value="3">3 - Put some dirt on your own face</option>
+                <option value="4">4 - We can't be friends. Your a slob</option>
+                <option value="5">5 - Lick a napkin and wipe that dirt off their face!</option>
+            </select>
+            <h3><strong>Question 3</strong></h3>
+            <label for="question3"><h4>You have one cookie left. Would you . . .</h4></label>
+            <select class="form-control" id="question3">
+                <option value></option>
+                <option value="1">1 - Eat it quick before your friend sees you have a cookie</option>
+                <option value="2">2 - Break it in half and share the cookie</option>
+                <option value="3">3 - Offer them one bite</option>
+                <option value="4">4 - Eat the cookie in front of your friend. Get your own cookie!</option>
+                <option value="5">5 - Say to your friend "Here, eat this cookie"</option>
+            </select>
+            <h3><strong>Question 4</strong></h3>
+            <label for="question4"><h4>Your friend borrows your book and puts a wet glass on it leaving a ring. You . . .</h4></label>
+            <select class="form-control" id="question4">
+                <option value></option>
+                <option value="1">1 - Say "you owe me a new book!"</option>
+                <option value="2">2 - Cut them off from book borrowing club - permanently</option>
+                <option value="3">3 - Find opportunity to put a ring on one of their books</option>
+                <option value="4">4 - Act like nothing happened</option>
+                <option value="5">5 - hit me with the book and say it's yours now</option>
+            </select>
+            <h3><strong>Question 5</strong></h3>
+            <label for="question5"><h4>A friend asks you for help moving. When you arrive they tell you it's a dead body. Would you . . .</h4></label>
+            <select class="form-control" id="question5">
+                <option value></option>
+                <option value="1">1 - Call the cops</option>
+                <option value="2">2 - Wipe your finger prints off the house and leave, never to return</option>
+                <option value="3">3 - Convince them to go to the cops</option>
+                <option value="4">4 - Ask them what happened</option>
+                <option value="5">5 - Say "Make me a drink and where's the bleach?"</option>
+            </select>
+            <h3><strong>Question 6</strong></h3>
+            <label for="question6"><h4>Your friend's heart is broken.  Your way of helping is . . .</h4></label>
+            <select class="form-control" id="question6">
+                <option value></option>
+                <option value="1">1 - Be a shoulder to cry on</option>
+                <option value="2">2 - Hook them up with new friend</option>
+                <option value="3">3 - Get them drunk</option>
+                <option value="4">4 - Take them out dancing</option>
+                <option value="5">5 - Say let's go beat up the person who hurt you!</option>
+            </select>
+            <h3><strong>Question 7</strong></h3>
+            <label for="question7"><h4>Your friend has lost 3 games you've loaned them in the past year and is asking to borrow one again.  You...</h4></label>
+            <select class="form-control" id="question7">
+                <option value></option>
+                <option value="1">1 - Tell them to kick rocks</option>
+                <option value="2">2 - Tell them flat out no - you're too irresponsible</option>
+                <option value="3">3 - Lie and tell them the game is broken</option>
+                <option value="4">4 - Tell them "you can have it when you give my the other 3 back"</option>
+                <option value="5">5 - Lend it anyway (you had 2 just for this occasion)</option>
+            </select>
+            <h3><strong>Question 8</strong></h3>
+            <label for="question8"><h4>Last time you and your friend went out to eat, they paid.  This time . . .</h4></label>
+            <select class="form-control" id="question8">
+                <option value></option>
+                <option value="1">1 - If their buying, i'm flying! </option>
+                <option value="2">2 - Let's go stag - I didn't ask you to pay last time</option>
+                <option value="3">3 - Pick a cheap place and offer to pay</option>
+                <option value="4">4 - Say "i'm not hungry" and stay home.  They probably expect me to pay.</option>
+                <option value="5">5 - Insist they put thier money away. I'm paying!</option>
+            </select>
+            <h3><strong>Question 9</strong></h3>
+            <label for="question9"><h4>Your friend is absent from class. Your first thought is . . .</h4></label>
+            <select class="form-control" id="question9">
+                <option value></option>
+                <option value="1">1 - I hope they are okay</option>
+                <option value="2">2 - What did they do now. Probably in jail</option>
+                <option value="3">3 - Better not be drinkning without me</option>
+                <option value="4">4 - Dang! Who do I cheat off of now!</option>
+                <option value="5">5 - How dare they leave me here alone today!</option>
+            </select>
+            <h3><strong>Question 10</strong></h3>
+            <label for="question10"><h4>Your friend has just insulted you.  You ...</h4></label>
+            <select class="form-control" id="question10">
+                <option value></option>
+                <option value="1">1 - Get offended but stay friends</option>
+                <option value="2">2 - Just laugh it off</option>
+                <option value="3">3 - Punch them in the face</option>
+                <option value="4">4 - Cut them off, we can't be friends anymore</option>
+                <option value="5">5 - Say something even more offensive back</option>
+            </select>
+            <br>
+            <br>
+            <div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit-btn"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+                <!-- <div><button type="submit" class="btn btn-primary">Submit</button></div> -->
+            </div>
+<br>
+<br>
+            <div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="push-btn"><i class="fa fa-check-circle" aria-hidden="true"></i>Test Push</button>
+                        <!-- <div><button type="submit" class="btn btn-primary">Submit</button></div> -->
+            </div>
+
+
+        </div>
+    </div>
+    
+<script type="text/javascript">
+
+var newFriend =[]
+var scoreComplete = false;
+var nameComplete = false;
+var photoComplete = false;
+
+var checkName = function (){
+
+if(newFriend.name === ""){
+    alert("Name cannot be blank.  Please add name and submit again")
+        return nameComplete = false;
+} else {
+            console.log("Name filled in correctly")
+            return nameComplete = true;
+        }
+};
+
+var checkPhoto = function (){
+if(newFriend.photo === ""){
+    alert("Photo cannot be blank.  Please add link and submit again")
+    return photoComplete = false;
+} else {
+            console.log("Photo filled in correctly");
+            return photoComplete = true;
+        }
+};
+
+var checkScores = function(){
+    console.log("newFriend scores is now " + newFriend.scores)
+    console.log("newFriends score.length is now " + newFriend.scores.length)
+    for (let i = 0; i < newFriend.scores.length; i++) {
+        const value = parseInt([i])+1;
+        const valueToCheck = ($("#question"+value).val())
+        if(valueToCheck === ""){
+            alert("Sorry. Question "+value + " is blank. Please go back to form, answer question " + value + " and submit the form again.")
+            return scoreComplete = false;
+        }
+        else {
+            console.log("all questions filled in correctly")
+            return scoreComplete = true;
+        }
+    }
+}
+
+var findFriend = function(){
+    //Grabs current URL of website
+    var currentURL = window.location.origin;
+    // console.log(currentURL);
+     $.post("/api/data", friendsArray)
+            .then(function(data) {
+              console.log("add.html", data);
+              alert("Adding character...");
+            });
+
+
+
+    //AJAX posts the data to friends API.
+    // $.post(currentURL + "/api/data", friendsArray)
+    //     .then(function(data) {
+    //         console.log("/api/data", data);
+    //     })
+}
+$("#push-btn").on("click", function(event) {
+    console.log("push button pressed")
+    var newFriend = [{
+        "name":"Steve",
+        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores":[
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+        ] 
+    }];
+
+        //Grabs current URL of website
+        var currentURL = window.location.origin;
+        console.log("current URL is "+ currentURL)
+
+        console.log(friendsArray)
+    // $.post("/api/friends", newFriend, function(data) {
+    //             //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+    //             // $("#matchName").text(data.name);
+    //             // $("#matchPic").attr("src", data.profilePic);
+    //         });
+    
+});
+
+    $("#submit-btn").on("click", function(event) {
+        console.log("submit button pressed")
+        event.preventDefault();
+        
+        newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [
+                $("#question1").val(),
+                $("#question2").val(),
+                $("#question3").val(),
+                $("#question4").val(),
+                $("#question5").val(),
+                $("#question6").val(),
+                $("#question7").val(),
+                $("#question8").val(),
+                $("#question9").val(),
+                $("#question10").val()
+            ]
+        }
+        
+        checkPhoto();
+        checkName();
+        checkScores();
+        if (scoreComplete && nameComplete && photoComplete){
+        findFriend();
+        }
+        console.log(newFriend);
+        //   $.post("/api/characters", newCharacter)
+        //     .then(function(data) {
+            //       console.log("add.html", data);
+            //       alert("Adding character...");
+            //     });
+            });
+</script>
+
+</body>
+            
